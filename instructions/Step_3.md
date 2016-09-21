@@ -9,7 +9,7 @@ PWAs are made up of 3 fundamental parts:
 * Service Workers
 * Web App Manifest - the part of the code (JSON) that makes the PWA 'appy' - launchable via icon, etc.
 
-Architecturally, there is a split between how we develop the shell and how we develop the content - all with good reason - to improve load times.
+Architecturally, there is a split between how we develop the shell and how we develop the content - all with good reason - to improve load times for example.
 
 
 ##App Shell
@@ -27,15 +27,14 @@ So to summarise, the app shell has a few characteristics:
 * Cached
 * Static
 
-##Fast loading
+##Fast loading & Caching
 Things to expect when using this sort of architecture:
 * The first time it loads will be its slowest load time
 * The first load will use caching to improve performance for the next time you visit
 * Local caching also means the next time you visit, that you can still load the app shell even without an internet connection
 
-##Caching
-What is caching? In reference to this architecture, it really means storing all of the static files (the things that don't change) locally on the device so that you only ever have to retrieve it from the network (which can be slow) once. So, the next time it will be retrieved locally from the device which makes the load much much faster. Reducing the need to go over a network speeds up the app and gives a much better user experience - no one likes a slow loading app - this architecture is designed to help with that.
+What is caching? In reference to this architecture, in very basic terms it just means storing all of the static files (the things that don't change) locally on the device so that you only ever have to retrieve it from the network (which can be slow) once. So, the next time it will be retrieved locally from the device which makes the load much much faster. Reducing the need to go over a network speeds up the app and gives a much better user experience - no one likes a slow loading app - this architecture is designed to help with that.
 
 
-##Service Worker overview
-At a high level, the service worker is a script that runs in the background, seperate from the website - it responds to events, for example, a network request - The service worker is responsible for handling all of the loading and caching of content (including the app shell) that gives us that performance benefit.
+##Service Worker [Advanced topic]
+At a high level, the service worker is a script that runs in the background, seperate from the website - it responds to events and is responsible for handling all of the loading and caching of content (including the app shell) that gives us that performance benefit. It can be used to do things like push notifications and optimise how the dynamic content is handled also.
