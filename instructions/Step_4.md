@@ -1,4 +1,4 @@
-### Responsify
+#Responsify
 
 
 ##Responsive Principles

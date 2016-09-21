@@ -1,4 +1,4 @@
-### Deployment and QA
+#Deployment and QA
 
 ##Deployment
 
