@@ -8,7 +8,7 @@ Fundamentally, there are 2 distinct parts, the App Shell and the Service Worker.
 
 The App Shell really means all of the HTML, CSS, JavaScript and Images - the resources and assets needed to power the User Interface. Think of an app shell as really the container or frame of the application where it is stored locally on your device in something called the cache and allows for the rest of the app, namely the content, to be dynamically brought in.
 
-![alt text](https://github.com/tritorto/camp-seek-pwa/tree/master/instructions/images/appshell.jpg "App Shell Architecture")
+![logo](https://github.com/tritorto/camp-seek-pwa/blob/master/instructions/images/appshell.jpg)
 
 The app shell has a few characteristics:
 
