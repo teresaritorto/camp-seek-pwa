@@ -1,0 +1,105 @@
+@media (max-width: 1024px) {
+  html { 
+    font-size: 20px;
+    color: #fff;
+  }
+
+  a, a:visited, a:hover {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .weather__temp-container {
+    color: #fff;
+  }
+
+  .weather__location-select-link {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+
+  .weather__location-select-link--selected {
+    color: #fff !important;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);;
+  }
+
+  .weather__location-select-container {
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 3rem;
+}
+
+  .weather__body--cloudy {
+    background: #007A97;
+    transition: background-color 2s linear;
+  }
+
+  .weather__body--sunny {
+    background: #00B5DF;
+    transition: background-color 2s linear;
+  }
+
+  .weather__body--rain {
+    background: #006278;
+    transition: background-color 2s linear;
+  }
+
+  .weather__body--overcast {
+    background: #009ABD;
+    transition: background-color 2s linear;
+  }
+
+  .weather__body--storm {
+    background: #004756;
+    transition: background-color 2s linear;
+  }
+
+  .weather__container-header {
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-bottom:10px;
+  }
+
+  .weather__temp-container {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+  }
+
+  .weather__max-temp {
+    color: #ff4444;
+  }
+
+  .weather__min-temp {
+    color: #00aaff;
+  }
+  .weather__container {
+    min-width: 300px;
+    width: auto;
+    margin: 50px;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .weather__image--cloudy, .weather__image--storm, .weather__image--rain, .weather__image--sunny, .weather__image--overcast {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: auto;
+    transition: background-image 2s ease-in-out;
+  }
+
+  .weather__image-container {
+    height: 345px;
+    border: none;
+    margin: 0;
+  }
+
+  .weather__chance-of-rain-container {
+    text-align: center;
+  }
+}
