@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Camp SEEK - Weather</title>
+
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+    <link href="styles/weather.css" rel="stylesheet"/>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Camp SEEK Weather">
+    <link rel="apple-touch-icon" href="/icons/icon-152x152.png">
+
+    <meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#d21872">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+    <div class="weather__container">
+
+        <div class="weather__container-header">
+            <h1 class="weather__location-title">
+                <span id="cityName">City</span>,
+                <span id="countryName">Country</span>
+            </h1>
+
+            <div class="weather__temp-container">
+                <span class="weather__max-temp" id="maxTemp"></span> |
+                <span class="weather__min-temp" id="minTemp"></span>
+            </div>
+        </div>
+
+        <div class="weather__image-container">
+            <div id="weatherImage"></div>
+        </div>
+
+        <div class="weather__chance-of-rain-container">
+            Chance of rain: <span class="weather__rain-chance" id="rainChance"></span>
+        </div>
+
+        <div class="weather__location-select-container">
+            <a href="#"
+               class="weather__location-select-link weather__location-select-link--selected"
+               id="button0">0</a>
+            <a href="#" class="weather__location-select-link" id="button1">1</a>
+            <a href="#" class="weather__location-select-link" id="button2">2</a>
+            <a href="#" class="weather__location-select-link" id="button3">3</a>
+            <a href="#" class="weather__location-select-link" id="button4">4</a>
+        </div>
+
+    </div>
+
+    <script src="javascript/weather.js"></script>
+</body>
+</html>
