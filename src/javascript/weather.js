@@ -21,6 +21,8 @@ $(document).ready(function() {
     var setWeatherTypeImage = function(weatherDescription) {
         $('#weatherImage').removeClass();
         $('#weatherImage').addClass('weather__image--' + weatherDescription);
+
+        $('body').removeClass().addClass('weather__body--' + weatherDescription);
     };
 
     var showWeatherDataForLocation = function (locationId) {
