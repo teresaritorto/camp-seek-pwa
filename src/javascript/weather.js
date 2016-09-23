@@ -53,7 +53,7 @@ $(document).ready(function() {
 
     var getWeatherData = function() {
         $.ajax({
-            url: 'http://beta.json-generator.com/api/json/get/EynHtKfn'
+            url: 'https://s3-ap-southeast-2.amazonaws.com/camp-seek-16/service'
         }).done(function(data) {
             weatherData = data;
 

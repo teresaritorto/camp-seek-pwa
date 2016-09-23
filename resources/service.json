@@ -1,0 +1,57 @@
+[
+  {
+    "description": "cloudy",
+    "chanceOfRain": 0.48,
+    "temperature": {
+      "max": 20,
+      "min": 12
+    },
+    "country": "Australia",
+    "city": "Melbourne",
+    "id": 0
+  },
+  {
+    "description": "rain",
+    "chanceOfRain": 0.8,
+    "temperature": {
+      "max": 19,
+      "min": 5
+    },
+    "country": "England",
+    "city": "London",
+    "id": 1
+  },
+  {
+    "description": "storm",
+    "chanceOfRain": 0.95,
+    "temperature": {
+      "max": 24,
+      "min": 7
+    },
+    "country": "USA",
+    "city": "New York",
+    "id": 2
+  },
+  {
+    "description": "sunny",
+    "chanceOfRain": 0.12,
+    "temperature": {
+      "max": 35,
+      "min": 19
+    },
+    "country": "Thailand",
+    "city": "Bangkok",
+    "id": 3
+  },
+  {
+    "description": "overcast",
+    "chanceOfRain": 0.23,
+    "temperature": {
+      "max": 22,
+      "min": 14
+    },
+    "country": "Japan",
+    "city": "Tokyo",
+    "id": 4
+  }
+]
