@@ -45,6 +45,9 @@ We will go into more detail with a the Service Worker Exercise.
 
 ##Configure for HTTPS
 
+Service workers must be run using HTTPS (or localhost - local development), so we will need to make some code changes to let our app work with HTTPS.
+Open the javascript/weather.js file and change the URL of the getWeatherData ajax call. The snippet for that is located [here](../resources/snippets/https.js)
+
 ##Add serviceworker.js 
 Create a new file in the src folder and name it serviceworker.js - it should be at the same directory level where your index.html file is.
 
@@ -84,7 +87,7 @@ Response types include -
 Now, open the index.html and paste the code snippet from [here](../resources/snippets/serviceworker-html.html) - this bit of code checks that the service worker is supported in the browser you are using (not all browsers support this).
 
 ##Upload 
-Upload your changes including the new serviceworker.js and modified index.html files to dropbox.
+Upload your changes including the new serviceworker.js, the javascript/weather.js file and the modified index.html file to dropbox.
 
 ##Test
 Using Chrome on your computer, open the URL to your weather application (i.e. Pancake URL).
