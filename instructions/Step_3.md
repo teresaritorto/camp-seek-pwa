@@ -41,11 +41,11 @@ At a high level, the service worker is a script that runs in the background, sep
 
 We will go into more detail with a the Service Worker Exercise.
 
-##Exercise
+#Exercise
 
-#Configure for HTTPS
+##Configure for HTTPS
 
-#Add serviceworker.js 
+##Add serviceworker.js 
 Create a new file in the src folder and name it serviceworker.js - it should be at the same directory level where your index.html file is.
 
 Open serviceworker.js and paste the code snippet from [here](../resources/snippets/serviceworker.js)
@@ -83,10 +83,10 @@ Response types include -
 
 Now, open the index.html and paste the code snippet from [here](../resources/snippets/serviceworker-html.html) - this bit of code checks that the service worker is supported in the browser you are using (not all browsers support this).
 
-#Upload 
+##Upload 
 Upload your changes including the new serviceworker.js and modified index.html files to dropbox.
 
-#Test
+##Test
 Using Chrome on your computer, open the URL to your weather application (i.e. Pancake URL).
 Now open up the Chrom developer tools. If you are on Windows, you can press F12 to launch, or on a Mac, Cmd+alt+I will load this.
 
@@ -96,7 +96,7 @@ If you look in the console, you should see some debug logging showing that the s
 
 If you go back to your Applications directory and then click on Cache - you will see the static assets defined in the serviceworker.js file.
 
-#Bonus - Advanced Debugging
+###Bonus - Advanced Debugging
 
 If you are familiar with JavaScript debugging, there are some interesting insights on what is going on behind the scenes in the service worker.
 
