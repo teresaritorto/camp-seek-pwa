@@ -10,5 +10,5 @@ Now that we've made our app responsive, we need to re-upload our files to dropbo
 3. You should see all of the responsive changes.
 
 ##Bonus Step
-Try downloading the apps from other people around you test them out (don't forget the https://).
+Try downloading the apps from other people around you and test them out (don't forget the https://).
 

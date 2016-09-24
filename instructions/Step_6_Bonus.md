@@ -15,29 +15,29 @@ Install is an event that happens when this worker is successfully registered - w
 self.addEventListener("activate", function (event) {  
 ```
 
-Install is an event that happens when this worker is successfully registered - when the application first loads.
+Activate is an event that happens occurs the first time the worker becomes active - i.e.
+when the page is refreshed (hard)
 
 
 ```
 self.addEventListener("fetch", function (event) { 
 ```
 
-The Fetch Event happens when a request is made
-This particular fetch handles delayed caching of other assets based on opaque concerns
-Request types include - 
+The Fetch Event happens when a request is made (every time).
+This particular fetch handles delayed caching of other assets based on the response types.
 
+The different response types (listed below) have to be handled differently if you want to cache them.
+
+Response types:
 * Basic: hosted on our domain
 * CORS: external domain that supports CORS (i.e. full access to the response)
 * Opaque: response from another source that doesn't support CORS
 
-##Upload 
-Upload your changes including the new serviceworker.js, the javascript/weather.js file and the modified index.html file to dropbox.
-
 ##Test
-Using Chrome on your computer, open the URL to your weather application (i.e. Pancake URL).
-Now open up the Chrom developer tools. If you are on Windows, you can press F12 to launch, or on a Mac, Cmd+alt+I will load this.
+Using Chrome on your computer, open the URL to your weather application (i.e. the https Pancake URL).
+Now open up the Chrome developer tools. If you are on Windows, you can press F12 to launch, or on a Mac, Cmd+alt+I will load this.
 
-Now go to the Applications tab and click on ServiceWorkers. You should see your newly added service worker.
+Now go to the Applications tab and click on ServiceWorkers. You should see your service worker listed there.
 
 If you look in the console, you should see some debug logging showing that the service worker has cached the app shell and is retrieving from the cache.
 
