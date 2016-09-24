@@ -61,6 +61,6 @@ Create a new file in the src folder and name it serviceworker.js - it should be 
 
 Open serviceworker.js and paste the code snippet from [here](../resources/snippets/serviceworker.js)
 
-Now, open the index.html and paste the code snippet from [here](../resources/snippets/serviceworker-html.html) - this bit of code checks that the service worker is supported in the browser you are using (not all browsers support this).
+Now, open the index.html and paste (under the existing script tag and before the </body> tag) the code snippet from [here](../resources/snippets/serviceworker-html.html) - this bit of code checks that the service worker is supported in the browser you are using (not all browsers support this).
 
 You have just configured your app to use the app shell architecture using caching in the service worker. Note: Step 6, as a bonus goes into much more detail about the service worker code that you can look at later on.
