@@ -12,7 +12,7 @@ Install is an event that happens when this worker is successfully registered - w
 
 
 ```
-self.addEventListener('install', function(e) {  
+self.addEventListener("activate", function (event) {  
 ```
 
 Install is an event that happens when this worker is successfully registered - when the application first loads.
@@ -24,12 +24,11 @@ self.addEventListener("fetch", function (event) {
 
 The Fetch Event happens when a request is made
 This particular fetch handles delayed caching of other assets based on opaque concerns
-Response types include - 
+Request types include - 
 
 * Basic: hosted on our domain
 * CORS: external domain that supports CORS (i.e. full access to the response)
 * Opaque: response from another source that doesn't support CORS
-
 
 ##Upload 
 Upload your changes including the new serviceworker.js, the javascript/weather.js file and the modified index.html file to dropbox.

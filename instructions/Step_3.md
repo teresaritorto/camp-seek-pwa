@@ -1,8 +1,8 @@
 #Architecture
 
-Let talk about architecture - meaning all the different components that make up the software you have been building.
+Lets talk about architecture - meaning all the different components that make up the software you have been building.
 
-So we will be covering something called the app shell architecture - which is what progressive web apps (PWA) typically use.
+In this step, we will be covering something called the app shell architecture - which is what progressive web apps (PWAs) typically use.
 
 A couple of things that are key to this sort of architecture is the separation of what we commonly refer to as static and dynamic content.
 
@@ -10,12 +10,10 @@ When you think of an app, generally there is something dynamic and something sta
 
 Modern progressive web apps are made up of 3 fundamental parts:
 * An App Shell
-* Service Workers
+* Service Worker
 * Dynamically loaded content (via Javascript)
 
-Take a moment to think about the weather app you have been working on. Architecturally, there is a split between the shell and the dynamic content (i.e. the data).
-
-So lets go over the App Shell
+Take a moment to think about the weather app you have been working on. Architecturally, there is a split between the shell and the dynamic content (i.e. the data) - keep this in mind as we go over the App Shell next.
 
 
 ##App Shell
@@ -34,7 +32,7 @@ Well.. apps need to be fast loading, using the app shell architecture gives you 
 ##Fast loading & Caching
 Things to expect when using this sort of architecture:
 * The first time it loads will be its slowest load time
-* The first load will use caching to improve performance for the next time you visit (rendering should be super fast)
+* The first load will use caching to improve performance for the next time you visit (rendering should be super fast the next time)
 * Local caching also means you have the potential to make your app work offline.
 
 What is caching? In reference to this architecture, in very basic terms it just means storing the static files (the things that don't change) locally on the device so that you only ever have to retrieve it from the network (which can be slow) once. So, the next time it will be retrieved locally from the device which makes the load much faster. 
