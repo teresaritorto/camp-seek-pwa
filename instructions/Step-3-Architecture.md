@@ -20,17 +20,19 @@ Take a moment to think about the weather app you have been working on. Architect
 
 When talking about the App Shell, we really mean all of the static content mentioned earlier, things like HTML, CSS, JavaScript and Images - the resources and assets needed to power the User Interface. Think of an app shell as really the container or frame of the application where it is stored locally on your device in something called the cache and allows for the rest of the app, namely the content, to be dynamically brought in.
 
-If you review the image below, you can see, architecturally there is a split between the shell and the content - so the shell doesn't change (often) and can therefore be stored locally and the content (which does change often) is brought in dynamically through an ajax call for example (note: image taken from Google).
+If you review the image below, you can see, architecturally there is a split between the shell and the content - so the shell doesn't change (often) and can therefore be stored locally and the content (which does change often) is brought in dynamically through an ajax call for example.
 
-![logo](https://github.com/tritorto/camp-seek-pwa/blob/master/instructions/images/appshell.jpg)
+![App Shell](images/appshell.jpg)
+*Image source: https://codelabs.developers.google.com/codelabs/your-first-pwapp/#2*
 
-Why do we bother doing this?
+**Why do we bother doing this?**
 
-Well.. apps need to be fast loading, using the app shell architecture gives you the benefit of caching easily and as you will see later on, through the use of the service worker, you can get a lot of value.
-
+Apps need to be fast loading and using the app shell architecture gives you the benefit of caching easily. As you will see later on through the use of the service worker, you can get a lot of value.
 
 ## Fast loading & Caching
+
 Things to expect when using this sort of architecture:
+
 * The first time it loads will be its slowest load time
 * The first load will use caching to improve performance for the next time you visit (rendering should be super fast the next time)
 * Local caching also means you have the potential to make your app work offline.
@@ -39,8 +41,8 @@ What is caching? In reference to this architecture, in very basic terms it just 
 
 Performance tip: Reducing the need to go over a network speeds up the app and gives a much better user experience - no one likes a slow loading app - this architecture is designed to help with that.
 
-
 ## Service Worker [Advanced topic]
+
 At a high level, the service worker is a script that runs in the background, seperate from the website - it responds to events and is responsible for handling all of the loading and caching of content (including the app shell) that gives us that performance benefit. It can be used to do things like push notifications and optimise how the dynamic content is handled also - things like offline viewing.
 
 We will go into more detail with a the Service Worker Exercise in Step 6 (Bonus).
@@ -52,14 +54,15 @@ To use the app shell architeture we need to configure our app to use HTTPS and w
 ## Configure for HTTPS
 
 Service workers must be run using HTTPS (or localhost - local development), so we will need to make some code changes to let our app work with HTTPS.
-Open the javascript/weather.js file and change the URL of the getWeatherData ajax call. The snippet for that is located [here](../resources/snippets/https.js)
+Open the javascript/weather.js file and change the URL of the getWeatherData ajax call. The snippet for that is located [here](../resources/snippets/https.js).
 
 Pro tip: If you don't know much about HTTPS, feel free to read up on it in your own time - it's pretty important when working in web development.
 
-## Add serviceworker.js 
+## Add serviceworker.js
+
 Create a new file in the src folder and name it serviceworker.js - it should be at the same directory level where your index.html file is.
 
-Open serviceworker.js and paste the code snippet from [here](../resources/snippets/serviceworker.js)
+Open serviceworker.js and paste the code snippet from [here](../resources/snippets/serviceworker.js).
 
 Now, open the index.html and paste (under the existing script tag and before the </body> tag) the code snippet from [here](../resources/snippets/serviceworker-html.html) - this bit of code checks that the service worker is supported in the browser you are using (not all browsers support this).
 
