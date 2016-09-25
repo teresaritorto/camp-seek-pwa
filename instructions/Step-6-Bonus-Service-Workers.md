@@ -1,4 +1,15 @@
-#Service Workers (Bonus)
+## Table of contents
+
+1. [Introduction](Step-0-Introduction.md)
+1. [Setup](Step-1-Setup.md)
+1. [Converting to PWA](Step-2-Convert-to-PWA.md)
+1. [Architecture](Step-3-Architecture.md)
+1. [Responsify](Step-4-Responsify.md)
+1. [Security and QA](Step-5-Security-and-QA.md)
+1. Service Workers (bonus)
+1. [Conclusion](Step-7-Conclusion.md)
+
+# Service Workers (bonus)
 
 Open serviceworker.js and take a moment to browse over the code.
 
@@ -33,7 +44,7 @@ Response types:
 * CORS: external domain that supports CORS (i.e. full access to the response)
 * Opaque: response from another source that doesn't support CORS
 
-##Test
+## Test
 Using Chrome on your computer, open the URL to your weather application (i.e. the https Pancake URL).
 Now open up the Chrome developer tools. If you are on Windows, you can press F12 to launch, or on a Mac, Cmd+alt+I will load this.
 
@@ -43,7 +54,7 @@ If you look in the console, you should see some debug logging showing that the s
 
 If you go back to your Applications directory and then click on Cache - you will see the static assets defined in the serviceworker.js file.
 
-###Bonus - Advanced Debugging
+### Bonus - Advanced Debugging
 
 If you are familiar with JavaScript debugging, there are some interesting insights on what is going on behind the scenes in the service worker.
 

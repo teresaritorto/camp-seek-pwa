@@ -1,3 +1,14 @@
+## Table of contents
+
+1. [Introduction](Step-0-Introduction.md)
+1. [Setup](Step-1-Setup.md)
+1. Converting to PWA
+1. [Architecture](Step-3-Architecture.md)
+1. [Responsify](Step-4-Responsify.md)
+1. [Security and QA](Step-5-Security-and-QA.md)
+1. [Service Workers (bonus)](Step-6-Bonus-Service-Workers.md)
+1. [Conclusion](Step-7-Conclusion.md)
+
 # Converting to a PWA
 
 Now that your website is live, let's start adding some progressive web app features to it. Websites can already be added to a phone's home screen, but we can improve that experience for the end user.

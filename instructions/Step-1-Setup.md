@@ -1,3 +1,14 @@
+## Table of contents
+
+1. [Introduction](Step-0-Introduction.md)
+1. Setup
+1. [Converting to PWA](Step-2-Convert-to-PWA.md)
+1. [Architecture](Step-3-Architecture.md)
+1. [Responsify](Step-4-Responsify.md)
+1. [Security and QA](Step-5-Security-and-QA.md)
+1. [Service Workers (bonus)](Step-6-Bonus-Service-Workers.md)
+1. [Conclusion](Step-7-Conclusion.md)
+
 # Setup
 
 Before we start we need to set up a few accounts that will help us with deploying our app and making it visible to everyone on the internet. There are many tools that can be used for this, but for the purposes of this exercise we'll be continuing to use Pancake and Dropbox, the same as Bron's session.
