@@ -49,7 +49,7 @@ The first part is similar to iOS. Add the following to the `head` element of you
 
 This tells android where to look for a `manifest.json` file, which is just a settings file with heaps of options. You already know that your API is also made of JSON, this is very much the same idea just used for a different purpose.
 
-Download `manifest.json` into your *root* folder. The manifest can be found here: [manifest.json](../resources/snippets/manifest.json).
+Download `manifest.json` into your *root* folder. The manifest can be found here: [manifest.json](https://raw.githubusercontent.com/tritorto/camp-seek-pwa/master/resources/snippets/manifest.json).
 
 Open up the `manifest.json` file; can you tell what the options mean?
 
