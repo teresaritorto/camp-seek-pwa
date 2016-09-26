@@ -60,15 +60,6 @@ We will go into more detail with a the Service Worker Exercise in Step 6 (Bonus)
 
 # Exercise
 
-To use the app shell architeture we need to configure our app to use HTTPS and we will also need to create the service worker file. So let's get started...
-
-## Configure for HTTPS
-
-Service workers must be run using HTTPS (or localhost - local development), so we will need to make some code changes to let our app work with HTTPS.
-Open the javascript/weather.js file and change the URL of the getWeatherData ajax call. The snippet for that is located [here](../resources/snippets/https.js).
-
-Pro tip: If you don't know much about HTTPS, feel free to read up on it in your own time - it's pretty important when working in web development.
-
 ## Add serviceworker.js
 
 Create a new file in the src folder and name it serviceworker.js - it should be at the same directory level where your index.html file is.
