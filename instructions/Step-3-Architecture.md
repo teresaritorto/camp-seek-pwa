@@ -56,16 +56,17 @@ Performance tip: Reducing the need to go over a network speeds up the app and gi
 
 At a high level, the service worker is a script that runs in the background, seperate from the website - it responds to events and is responsible for handling all of the loading and caching of content (including the app shell) that gives us that performance benefit. It can be used to do things like push notifications and optimise how the dynamic content is handled also - things like offline viewing.
 
-We will go into more detail with a the Service Worker Exercise in Step 6 (Bonus).
 
 # Exercise
 
 ## Add serviceworker.js
 
-Create a new file in the src folder and name it serviceworker.js - it should be at the same directory level where your index.html file is.
+For now, lets just add the service worker file to our app and we will go into more detail with a Service Worker Exercise in Step 6 (Bonus).
+
+Create a new file in the src root folder and name it serviceworker.js - it should be at the same directory level where your index.html file is.
 
 Open serviceworker.js and paste the code snippet from [here](../resources/snippets/serviceworker.js).
 
-Now, open the index.html and paste (under the existing script tag and before the </body> tag) the code snippet from [here](../resources/snippets/serviceworker-html.html) - this bit of code checks that the service worker is supported in the browser you are using (not all browsers support this).
+Now, open the index.html and paste (under the existing script tag and before the </body> tag) the code snippet from [here](../resources/snippets/serviceworker-html.html) - this bit of code checks that the service worker is supported in the browser you are using (not all browsers support this) and registers it if it is supported.
 
 You have just configured your app to use the app shell architecture using caching in the service worker. Note: Step 6, as a bonus goes into much more detail about the service worker code that you can look at later on.
