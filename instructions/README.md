@@ -25,6 +25,7 @@ We'll give you time for each section if you're following along with us and be fl
 
 The steps are:
 
+1. Introduction - you are here
 1. Setup - here we'll set up any tools and accounts you don't already have
 1. Converting to PWA - first steps to conversion to a progressive web app
 1. Architecture - thinking about how to structure your application code

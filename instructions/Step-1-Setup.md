@@ -44,7 +44,7 @@ We'll now set up your project files.
 1. Visit your website by typing in the subdomain you entered in Pancake and adding *.pancakeapps.com* on the end. For example: *camp-seek-pwa.pancakeapps.com* - you should see a welcome page that was created by Pancake
 1. If you now look at your Dropbox *Apps/pancake.io* folder, you should see new files called *example.html* and *index.html*
 1. Delete these 2 new files as we won't need them
-1. Using the code you worked on in Bron's session, copy the files into your Dropbox *Apps/pancake.io* folder - alternatively if you want to start fresh, download the completed example from [here](https://www.dropbox.com/s/kftry2abg4sbke9/camp-seek-coding-finished-example.zip?dl=1)
+1. Using the code you worked on in Bron's session, copy the files into your Dropbox *Apps/pancake.io* folder - alternatively if you want to start fresh, download the completed example and unzip the files into your Dropbox *Apps/pancake.io* folder [camp-seek-coding-finished-example.zip](https://www.dropbox.com/s/kftry2abg4sbke9/camp-seek-coding-finished-example.zip?dl=1)
 1. Go back to your website and refresh it to see 
 
 You should now have a good idea of what our deployment process is. Every time you change a file in the Dropbox *Apps/pancake.io* folder it will automatically update your website!
