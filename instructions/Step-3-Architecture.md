@@ -1,6 +1,6 @@
 ## Table of contents
 
-1. [Introduction](Step-0-Introduction.md)
+1. [Introduction](README.md)
 1. [Setup](Step-1-Setup.md)
 1. [Converting to PWA](Step-2-Convert-to-PWA.md)
 1. Architecture
